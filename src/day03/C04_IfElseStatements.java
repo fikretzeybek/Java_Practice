@@ -23,11 +23,11 @@ olabilirsin" veya "Emekli olmak icin .. Yil daha calisman gerekir" yazdirin.
 
         }
         if (cinsiyet == 'e' && yas < 65) {
-            System.out.println("Emekli olmak icin " + (65 - yas) + " yil daha calismaniz gerekiyor");
+            System.out.println("Emekli olmak icin daha " + (65 - yas) + " yil daha calismaniz gerekiyor.");
 
         }
         if (cinsiyet == 'k' && yas < 60) {
-            System.out.println("Emekli olmak icin " + (60 - yas) + "  yil daha calismaniz gerekiyor");
+            System.out.println("Emekli olmak icin daha " + (60 - yas) + "  yil daha calismaniz gerekiyor.");
 
         }
         if(!(cinsiyet == 'e' || cinsiyet == 'k')){
