@@ -12,28 +12,31 @@ olabilirsin" veya "Emekli olmak icin .. Yil daha calisman gerekir" yazdirin.
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Lutfen cinsiyetininzi giriniz : \nErkek:E  \nKadin:K");
+        System.out.println("Lutfen cinsiyetini zi giriniz : \nErkek:E  \nKadin:K");
         char cinsiyet = scanner.next().toLowerCase().charAt(0);
+
         System.out.println("Lutfen yasinizi giriniz : ");
         int yas = scanner.nextInt();
 
-        if (cinsiyet == 'e' && yas >= 65){
+        if (cinsiyet == 'e' && yas >= 65 || cinsiyet == 'k' && yas >= 60) {
             System.out.println("Emekli olabilirsiniz");
 
-        }if (cinsiyet == 'e' && yas < 65){
-            System.out.println("Emekli olmak icin" + (65-yas) +  "calismaniz gerekiyor" );
+        }
+        if (cinsiyet == 'e' && yas < 65) {
+            System.out.println("Emekli olmak icin " + (65 - yas) + " yil daha calismaniz gerekiyor");
 
-        }if (cinsiyet == 'k' && yas >= 60) {
-            System.out.println("Emekli olabilirsiniz");
+        }
+        if (cinsiyet == 'k' && yas < 60) {
+            System.out.println("Emekli olmak icin " + (60 - yas) + "  yil daha calismaniz gerekiyor");
 
-        }if (cinsiyet == 'k' && yas < 60) {
-            System.out.println("Emekli olmak icin" + (60 - yas) +   " yil calismaniz gerekiyor");
-
+        }
+        if(!(cinsiyet == 'e' || cinsiyet == 'k')){
+            System.out.println("Cinsiyetinizi yanlis girdiniz, tekrar giriniz");
         }
 
 
 
 
-
     }
+
 }
