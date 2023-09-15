@@ -1,0 +1,15 @@
+ //str.subString
+
+        String str = "548 sonuç arasından";
+
+        String deger = str.substring(0,3);
+
+        System.out.println(deger);
+
+        System.out.println(deger);
+
+        int sayi1 = Integer.parseInt(deger);
+
+        if (sayi1 > 100) {
+            System.out.println("sayı 100den büyük");
+        }
