@@ -14,8 +14,7 @@ Ornek:  gun=Pazar output = "Hafta sonu"  gun=Sali output = "Hafta ici"
         System.out.println("Lutfen gun ismini giriniz : ");
         String gunIsmi = scanner.next().toLowerCase();
 
-        if (gunIsmi.equals("pazartesi") || gunIsmi.equals("sali") || gunIsmi.equals("carsamba")
-                || gunIsmi.equals("persembe") || gunIsmi.equals("cuma")) {
+        if (gunIsmi.equals("pazartesi") || gunIsmi.equals("sali") || gunIsmi.equals("carsamba") || gunIsmi.equals("persembe") || gunIsmi.equals("cuma")) {
 
             System.out.println("Hafta ici");
         }
@@ -25,12 +24,14 @@ Ornek:  gun=Pazar output = "Hafta sonu"  gun=Sali output = "Hafta ici"
             System.out.println("Hafta sonu");
         }
 
-        if (!(gunIsmi.equals("pazartesi") || gunIsmi.equals("sali") || gunIsmi.equals("carsamba")
-                || gunIsmi.equals("persembe") || gunIsmi.equals("cuma") || gunIsmi.equals("pazar")
-                || gunIsmi.equals("cumartesi"))) {
+        if (!(gunIsmi.equals("pazartesi") || gunIsmi.equals("sali") || gunIsmi.equals("carsamba") ||
+              gunIsmi.equals("persembe") || gunIsmi.equals("cuma") || gunIsmi.equals("pazar") ||
+              gunIsmi.equals("cumartesi"))) {
 
-            System.out.println("Gecerli gun adi giriniz");
+            System.out.print("Gecerli gun adi giriniz");
         }
 
+
+            
     }
 }

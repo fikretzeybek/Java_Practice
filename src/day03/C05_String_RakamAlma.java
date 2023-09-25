@@ -1,6 +1,6 @@
 package day03;
 
-public class C05_ {
+public class C05_String_RakamAlma {
     public static void main(String[] args) {
         String str = "98 sonuç arasından";
 
