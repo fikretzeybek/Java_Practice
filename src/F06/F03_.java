@@ -1,4 +1,4 @@
-package F05;
+package F06;
 
 public class F03_ {
     public static void main(String[] args) {
